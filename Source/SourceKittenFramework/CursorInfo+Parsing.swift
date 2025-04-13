@@ -1,4 +1,4 @@
-import SWXMLHash
+import _SWXMLHash
 
 public extension Dictionary where Key == String, Value == SourceKitRepresentable {
     var referencedUSRs: [String] {

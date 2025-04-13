@@ -10,8 +10,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.1"),
-        .package(url: "https://github.com/drmohundro/SWXMLHash.git", from: "7.0.2"),
-        .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.5"),
+        .package(url: "https://github.com/preternatural-fork/Yams.git", branch: "main"),
+        .package(url: "https://github.com/vmanot/CorePersistence.git", branch: "main"),
     ],
     targets: [
         .executableTarget(
@@ -31,9 +31,9 @@ let package = Package(
             name: "SourceKittenFramework",
             dependencies: [
                 "Clang_C",
+                "CorePersistence",
                 "SourceKit",
-                .product(name: "SWXMLHash", package: "SWXMLHash"),
-                .product(name: "Yams", package: "Yams"),
+                "Yams",
             ]
         ),
         .testTarget(

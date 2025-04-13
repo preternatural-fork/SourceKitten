@@ -3,7 +3,7 @@ import Foundation
 #if SWIFT_PACKAGE
 import SourceKit
 #endif
-import SWXMLHash
+import _SWXMLHash
 
 // swiftlint:disable file_length
 // This file could easily be split up
@@ -502,7 +502,7 @@ private extension XMLIndexer {
             return nil
         }
         let elements = children.compactMap { $0.element }
-        func dictionary(from element: SWXMLHash.XMLElement) -> [String: SourceKitRepresentable] {
+        func dictionary(from element: _SWXMLHash.XMLElement) -> [String: SourceKitRepresentable] {
             return [element.name: element.text]
         }
         return elements.map(dictionary(from:)) as [SourceKitRepresentable]

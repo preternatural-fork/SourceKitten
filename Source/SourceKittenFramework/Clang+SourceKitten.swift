@@ -4,7 +4,7 @@
 import Clang_C
 #endif
 import Foundation
-import SWXMLHash
+import _SWXMLHash
 
 private var _interfaceUUIDMap = [String: String]()
 private var _interfaceUUIDMapLock = NSLock()
