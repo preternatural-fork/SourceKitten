@@ -3,7 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "SourceKitten",
-    platforms: [.macOS(.v12)],
+    platforms: [
+        .macOS(.v13)
+    ],
     products: [
         .executable(
             name: "sourcekitten",
@@ -20,8 +22,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.5.0"),
-        .package(url: "https://github.com/preternatural-fork/Yams.git", branch: "main"),
         .package(url: "https://github.com/vmanot/CorePersistence.git", branch: "main"),
+        .package(url: "https://github.com/preternatural-fork/Yams.git", branch: "main"),
     ],
     targets: [
         .executableTarget(

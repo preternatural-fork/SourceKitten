@@ -6,8 +6,40 @@
 
 #### Enhancements
 
+* None.
+
+#### Bug Fixes
+
+* None.
+
+## 0.37.2
+
+#### Breaking
+
+* None.
+
+#### Enhancements
+
+* Update some SwiftPM and Bazel dependencies.  
+  [SimplyDanny](https://github.com/SimplyDanny)
+
+#### Bug Fixes
+
+* None.
+
+## 0.37.1
+
+#### Breaking
+
+* None.
+
+#### Enhancements
+
 * Fully specify package dependencies for wider compatibility.  
   [Anthony Ilinykh](https://github.com/ailinykh)
+
+* Support Bazel's rules_swift 3.0.  
+  [Luis Padron](https://github.com/luispadron)
 
 #### Bug Fixes
 
